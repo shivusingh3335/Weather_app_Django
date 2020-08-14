@@ -29,17 +29,3 @@ def index(request):
 
     context = {'weather_data' : weather_data, 'form': form}
     return render(request, 'weather/index.html',context) #returns the index.html template
-    
-# 
-# 
-# city = 'India'
-#     city_weather = requests.get(url.format(city)).json() #request the API data and convert the JSON to Python data types
-#     weather = {
-#         'city' : city,
-#         'temperature' : city_weather['main']['temp'],
-#         'description' : city_weather['weather'][0]['description'],
-#         'icon' : city_weather['weather'][0]['icon']
-#     }
-#     context = {'weather' : weather}
-#     return render(request, 'weather/index.html',context) #returns the index.html template
-# #url = 'https://api.openweathermap.org/data/2.5/weather?q=India&appid=3968566ea1030f9253089cfb21713b24'
